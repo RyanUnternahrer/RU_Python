@@ -1,5 +1,18 @@
 import os.path
 
+print("Welcome to Ryan's password manager.")
+userChoice = input("Choose one: (1) make/check integerity of file (2) append new password (3) read file: ")
+userChoice = int(userChoice)
+
+if userChoice == 1:
+    checkExistacne()
+elif userChoice == 2:
+    appendNew()
+elif userChoice == 3:
+    readPasswords()
+else:
+    print("invalid responce")
+
 def checkExistacne():
     if os.path.exists("info.txt"):
         pass
